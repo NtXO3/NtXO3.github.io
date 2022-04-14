@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Minkhorst: E-Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js " crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_x69HfIxyVpU7mK7AHn0FG");
+        })();
+    </script>
+</head>
+<body>
+    <section id="landing" onmousemove="moveBackground(event)">
+        <nav>
+            <figure class="nav__logo--wrapper">
+                <img src="./Assets/Nathan Logo.png" alt="" class="personal-logo">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    " onclick="toggleModal()">Over Mij</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#projects" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Projecten</a>
+                </li>
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Contact</a>
+                </li>
+                <li class="nav__link click" onclick="toggleContrast()">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    "><i class="fas fa-adjust"></i></a>
+                </li>
+                <li class ="nav__link language__selector">
+                    <a href="./index-en.html" class="nav__link--language link__hover-effect
+                    link__hover-effect--black"><i class="fas fa-globe"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <header class="header">
+                    <div class="header__content">
+                        <h1 class="title">Hey!</h1>
+                        <h1 class="title title__color">Ik ben Nathan.</h1>
+                        <p class="header__para">
+                            Ik ben een <b class="text-color">Junior Frontend Developer</b> met een passie om interactieve en gebruikersvriendelijke User Interfaces te maken. 
+                        <br>
+                            <b class="text-color click link__hover-effect link__hover-effect--purple" onclick="toggleModal()">Hier</b> is meer info over mij.
+                        </p>
+                        <div class="social__list">
+                            <a href="#" target="_blank" class="social__link click"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="./Assets/David Bragg Resume.pdf" target="_blank" class="social__link click"><i class="fas fa-file-pdf"></i></a>
+                            <a href="" target="_blank" class="social__link click"><i class="fab fa-github-alt"></i></a>
+                        </div>
+                    </div>
+                </header>
+                <a href="#">
+                    <button class="mail__btn click" onclick="toggleModal()">
+                        <i class="fas fa-envelope"></i>
+                    </button>
+                </a>
+                <a href="#projects" class="scroll">
+                    <div class="scroll__icon click"></div>
+                </a>
+                <div class="modal">
+                    <div class="modal__half modal__about">
+                        <h3 class="modal__title modal__title--about">Meer Info Over Mij.</h3>
+                        <h4 class="modal__subtitle modal__subtitle--about">Junior Frontend Developer</h4>
+                        <p class="modal__para modal__para--about">
+                            Ik ben een 18-jarige <b class="text-color-modal">Junior Frontend Developer</b> uit Leiden, Nederland met een passie om interactieve en gebruikersvriendelijke <b class="text-color-modal">User Interfaces</b> te maken.
+                            <br>
+                            Het is mijn doel om bedrijven te voorzien van interactieve en mooie websites die de klant aanspreken en een gevoel van vertrouwen geven.
+                        </p>
+                        <div class="modal__languages">
+                            <figure class="modal__language">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" class="modal__language--img" alt="">
+                                <span class="language__name">HTML</span>
+                            </figure>
+                            <figure class="modal__language">
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" class="modal__language--img" alt="">
+                                <span class="language__name">CSS</span>
+                            </figure>
+                            <figure class="modal__language">
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" class="modal__language--img" alt="">
+                                <span class="language__name">JavaScript</span>
+                            </figure>
+                            <figure class="modal__language">
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" class="modal__language--img" alt="">
+                                <span class="language__name">React</span>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="modal__half modal__contact">
+                        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+                        <h3 class="modal__title modal__title--contact">Neem Contact Op!</h3>
+                        <h4 class="modal__subtitle modal__subtitle--contact">Ik sta open voor nieuwe kansen!</h4>
+                        <form id="contact__form" onsubmit="contact(event)">
+                            <div class="form__item">
+                                <label class="form__item--label">Name</label>
+                                <input type="text" name="user_name" class="input" required>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__item--label">E-Mail</label>
+                                <input type="email" name="user_email" class="input" required>
+                            </div>
+                            <div class="form__item">
+                                <label class="form__item--label">Message</label>
+                                <textarea type="input" name="message" class="input" required></textarea>
+                            </div>
+                            <button id="contact__submit" class="form__submit click">Verzenden</button>
+                        </form>
+                        <div class="modal__overlay modal__overlay--loading">
+                            <i class="fas fa-spinner"></i>
+                        </div>
+                        <div class="modal__overlay modal__overlay--success">
+                            Bedankt voor je bericht. Ik kijk er naar uit om meer te weten over jullie. Ik neem snel contact op!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./Assets/semi circle.svg" class="shape shape--0">
+        <img src="./Assets/circle.svg" class="shape shape--1">
+        <img src="./Assets/squiggly.svg" class="shape shape--2">
+        <img src="./Assets/circle.svg" class="shape shape--3">
+        <img src="./Assets/triangle.svg" class="shape shape--4">
+        <img src="./Assets/circle.svg" class="shape shape--5">
+        <img src="./Assets/squiggly.svg" class="shape shape--6">
+        <img src="./Assets/circle.svg" class="shape shape--7">
+        <img src="./Assets/semi circle.svg" class="shape shape--8">
+    </section>
+    <section id="projects" onmousemove="moveBackground(event)">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">Hier zie je <span class="text-color"> Projecten</span> van mij:</h1>
+                <div class="project__list">
+                    <div class="project">
+                        <div class="project__wrapper">
+                            <img src="./Assets/musicore mockup.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">MusiCore</h3>
+                                <h4 class="project__description--sub-title">
+                                    WordPress, WooCommerce met custom HTML en CSS
+                                </h4>
+                                <p class="project__description--para">
+                                    Sinds 2019 heb ik mijn eigen bedrijf gefocust op Muziek. Ik heb hiervoor zelf de website gemaakt met WordPress. Aan deze site heb ik ook veel custom CSS toegevoegd.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://musicore.co" target="_blank" class="project__description--link"><i class="fas fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__wrapper">
+                            <img src="./Assets/Frontend Simplified.jpg" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">Game Store</h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript & React
+                                </h4>
+                                <p class="project__description--para">
+                                    Sinds 2019 heb ik mijn eigen bedrijf gefocust op Muziek. Ik heb hiervoor zelf de website gemaakt met WordPress. Aan deze site heb ik ook veel custom CSS toegevoegd.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://musicore.co" target="_blank" class="project__description--link"><i class="fas fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <figure class="footer__logo--img">
+                    <img src="./Assets/Nathan Logo.png" class="footer__logo" alt="">
+                </figure>
+                <div class="footer__social--list">
+                    <a href="" class="footer__social--link 
+                    link__hover-effect 
+                    link__hover-effect--white">
+                    Github
+                    </a>
+                    <a href="" class="footer__social--link 
+                    link__hover-effect 
+                    link__hover-effect--white">
+                    Linkedin
+                    </a>
+                    <a href="" class="footer__social--link 
+                    link__hover-effect 
+                    link__hover-effect--white">
+                    CV
+                    </a>
+                    <a href="" class="footer__social--link 
+                    link__hover-effect 
+                    link__hover-effect--white" onclick="toggleModal()">
+                    Contact
+                    </a>
+                </div>
+                <div class="footer__copyright">Copyright &copy; 2022 Nathan Minkhorst </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
