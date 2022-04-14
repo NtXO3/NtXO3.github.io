@@ -151,7 +151,7 @@ nav, .scroll, header {
 /* DARK THEME */
 
 .dark-theme .title, .dark-theme .section__title, .dark-theme .section__sub-title, .dark-theme .nav__link--anchor,
-.dark-theme .fa-adjust, .dark-theme .header__para {
+.dark-theme .fa-adjust, .dark-theme .header__para, .dark-theme .fa-globe {
     color: #fff;
 }
 
@@ -309,7 +309,29 @@ nav{
     color: #fff;
     z-index: 5;
     box-shadow: 0 12px 30px 0 rgb(0,0,0, 0.4);
+}
 
+.language__btn{
+    position: fixed;
+    bottom: 112px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: none;
+    /*background-color: rgb(78, 33, 255);*/
+    background-color: transparent;
+    color: #fff;
+    z-index: 5;
+    /*box-shadow: 0 12px 30px 0 rgb(0,0,0, 0.4);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language__flag {
+    width: 40px;
 }
 
 .scroll{

@@ -28,7 +28,7 @@ function toggleContrast(event) {
     else {
         document.body.classList.remove("dark-theme")
     }
-}
+} 
 
 function contact(event) {
     event.preventDefault();
