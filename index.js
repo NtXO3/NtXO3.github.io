@@ -24,11 +24,21 @@ function toggleContrast(event) {
     contrastToggle = !contrastToggle
     if(contrastToggle) {
         document.body.classList += " dark-theme"
+        localStorage.setItem('dark', this.checked)
     }
     else {
         document.body.classList.remove("dark-theme")
+        localStorage.removeItem('dark', this.checked)
     }
 } 
+
+function checkContrast(event) {
+    if(localStorage.getItem('dark')) {
+        document.body.classList += " dark-theme"
+    } else {
+        document.body.classList.remove("dark-theme")
+    }
+}
 
 function contact(event) {
     event.preventDefault();
