@@ -555,6 +555,15 @@ nav{
     z-index: -1;
 }
 
+.modal__overlay--success{
+    background-color: #b42727;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px;
+    z-index: -1;
+}
+
 .modal__overlay--visible{
     z-index: 1;
     display: flex;

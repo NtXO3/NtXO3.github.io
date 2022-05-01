@@ -44,6 +44,7 @@ function contact(event) {
     event.preventDefault();
     const loading = document.querySelector('.modal__overlay--loading')
     const success = document.querySelector('.modal__overlay--success')
+    const errorEl = document.querySelector('.modal__overlay--error')
     loading.classList += " modal__overlay--visible"
 
     emailjs
@@ -57,7 +58,7 @@ function contact(event) {
             success.classList += " modal__overlay--visible";
         }).catch(() => {
             loading.classList.remove( "modal__overlay--visible");
-            alert('Oeps...er ging iets mis. Je E-Mail is niet verzonden. Probeer: nathanminkhorst@gmail.com')
+            errorEl.classList += " modal__overlay--visible";
         })
 }
 
