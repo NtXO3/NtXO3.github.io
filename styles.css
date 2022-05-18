@@ -175,7 +175,7 @@ nav, .scroll, header {
 /* DARK THEME */
 
 .dark-theme .title, .dark-theme .section__title, .dark-theme .section__sub-title, .dark-theme .nav__link--anchor,
-.dark-theme .fa-adjust, .dark-theme .header__para, .dark-theme .fa-globe {
+.dark-theme .fa-adjust, .dark-theme .header__para, .dark-theme .fa-globe, .dark-theme {
     color: #fff;
 }
 
@@ -206,6 +206,20 @@ nav, .scroll, header {
 
 .dark-theme .link__hover-effect--black:after{
     background-color: #fff;
+}
+
+.dark-theme .projects__filter--btn {
+    border-color:rgb(31, 214, 255);
+    color: rgb(31, 214, 255);
+}
+
+.dark-theme .projects__filter--btn:hover, .dark-theme .selected__filter {
+    background-color: rgb(31, 214, 255);
+    color: #232323;
+}
+
+.dark-theme .project__loading {
+    color: rgb(31, 214, 255);
 }
 
 /* NAVIGATIE BAR */
@@ -667,6 +681,109 @@ nav{
 
 .project__description--para{
     margin: 16px 0;
+}
+
+.projects__btn {
+    text-align: center;
+    border: none;
+    background-color: rgb(78, 33, 255);
+    color: #fff;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 12px;
+    transition: all 300ms ease;
+}
+
+.projects__btn:hover {
+    background-color: rgb(117, 82, 255)
+}
+
+.projects__btn:active {
+    transform: scale(0.9);
+}
+
+.project__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.projects__filter--btn {
+    background-color: transparent;
+    border: 2px solid rgb(78, 33, 255);
+    color: rgb(78, 33, 255);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 8px 18px;
+    margin: 0 12px;
+    transition: all 300ms ease;
+}
+
+.projects__filter--btn:hover {
+    background-color: rgb(78, 33, 255);
+    color: #fff;
+}
+
+.selected__filter {
+    background-color: rgb(78, 33, 255);
+    color: #fff;
+}
+
+.project__loading {
+    color: rgb(78, 33, 255);
+    margin-top: 32px;
+    font-size: 60px;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.loading__wrapper {
+    display: none;
+}
+
+.spinner-visible .project__loading {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.spinner-visible .loading__wrapper {
+    display: block;
+}
+
+.loading__wrapper {
+    text-align: center;
+}
+
+#projects-landing {
+    min-height: 101vh;
+}
+
+nav, .project__list, .projects__filter {
+    opacity: 1;
+    visibility: visible;
+    transition: all 600ms 500ms;
+}
+
+.modal--open .project__list, .modal--open nav, .modal--open .section__title, .modal--open .projects__filter {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.modal--open {
+    overflow: hidden;
 }
 
 /* FOOTER */
