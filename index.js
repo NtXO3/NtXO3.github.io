@@ -5,7 +5,7 @@
 // user_x69HfIxyVpU7mK7AHn0FG
 
 let isModalOpen = false;
-let contrastToggle = false;
+let isDarkTheme = JSON.parse(localStorage.getItem('dark')) === true
 const scaleFactor = 1 / 20;
 
 function moveBackground(event) {
@@ -21,22 +21,22 @@ function moveBackground(event) {
 }
 
 function toggleContrast(event) {
-    contrastToggle = !contrastToggle
-    if(contrastToggle) {
+    // if (isDarkTheme && )
+    isDarkTheme = !isDarkTheme
+    console.log('dark theme', isDarkTheme)
+    if(isDarkTheme) {
         document.body.classList += " dark-theme"
-        localStorage.setItem('dark', this.checked)
+        localStorage.setItem('dark', true)
     }
     else {
         document.body.classList.remove("dark-theme")
-        localStorage.removeItem('dark', this.checked)
+        localStorage.setItem('dark', false)
     }
 } 
 
-function checkContrast(event) {
-    if(localStorage.getItem('dark')) {
+function checkContrast() {
+    if (isDarkTheme) {
         document.body.classList += " dark-theme"
-    } else {
-        document.body.classList.remove("dark-theme")
     }
 }
 

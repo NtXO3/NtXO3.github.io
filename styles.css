@@ -227,6 +227,11 @@ nav, .scroll, header {
 .personal-logo{
     width: 50px;
     height: 50px;
+    transition: all 300ms ease;
+}
+
+.personal-logo:hover {
+    opacity: 0.7;
 }
 
 nav{
@@ -473,6 +478,10 @@ nav{
     transition: all 300ms ease;
 }
 
+.language__name {
+    color: #232323;
+}
+
 .modal__language:hover .language__name {
     transform: scale(1);
 }
@@ -507,6 +516,10 @@ nav{
     margin-bottom: 24px;
     line-height: 1.7;
     max-width: 380px;
+}
+
+.modal__para--about, .modal__subtitle--about, .modal__title--about {
+    color: #232323;
 }
 
 .language__name{
@@ -712,9 +725,9 @@ nav{
 
 .projects__filter {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 32px;
 }
 
 .projects__filter--btn {
@@ -727,6 +740,7 @@ nav{
     padding: 8px 18px;
     margin: 0 12px;
     transition: all 300ms ease;
+    margin-bottom: 24px;
 }
 
 .projects__filter--btn:hover {
@@ -942,6 +956,8 @@ footer{
 
     .project__description {
         text-align: center;
+        top: 50%;
+        left: 80px;
     }
 
     .modal__half{
