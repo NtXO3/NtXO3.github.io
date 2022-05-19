@@ -728,6 +728,7 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 32px;
 }
 
 .projects__filter--btn {
@@ -929,6 +930,10 @@ footer{
     .modal__half{
         width: 100%;
         border-radius: 0px !important;
+    }
+
+    .modal--open {
+        overflow: scroll;
     }
 }
 
