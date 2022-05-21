@@ -38,6 +38,15 @@ const projects = [
         tech: "HTML, CSS, JavaScript, React",
         link: "https://worlde-clone-react.vercel.app",
         description: "Een clone van de populaire Wordle Game. Het doel van deze game is om het juist gekozen woord te raden. Na elke gok zie je welke letters in het woord zitten en welke niet. Ik heb deze functionaliteit toegevoegd samen met een Score counter en een slimme fucntie die je niet letters laat typen die je al hebt gebruikt en niet in het woord zitten."
+    },
+    {
+        id: 5,
+        name: "Google Clone",
+        tags: ['framework', 'clones', 'api'],
+        url: `./Assets/google mockup.jpg`,
+        tech: 'HTML, CSS, JavaScript, React',
+        link: 'https://google-clone-six-tau.vercel.app',
+        description: "Een clone van 's werelds meestgebruikte Search Engine: Google. Deze clone van Google heeft de basis functionaliteit van Google; het ophalen van informatie van het internet. Je kan zelf zoeken naar een onderwerp en daarvoor de resultaten zien. Ik heb gebruik gemaakt van een API om de Zoekresultaten voor een zoekopdracht te krijgen. Meer functionaliteit zal worden toegevoegd."
     }
 ]
 
