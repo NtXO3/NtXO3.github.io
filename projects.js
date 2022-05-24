@@ -47,7 +47,16 @@ const projects = [
         tech: 'HTML, CSS, JavaScript, React',
         link: 'https://google-clone-six-tau.vercel.app',
         description: "Een clone van 's werelds meestgebruikte Search Engine: Google. Deze clone van Google heeft de basis functionaliteit van Google; het ophalen van informatie van het internet. Je kan zelf zoeken naar een onderwerp en daarvoor de resultaten zien. Ik heb gebruik gemaakt van een API om de Zoekresultaten voor een zoekopdracht te krijgen. Meer functionaliteit zal worden toegevoegd."
-    }
+    },
+    {
+        id: 6,
+        name: "Netflix Clone",
+        tags: ['framework', 'clones', 'api'],
+        url: `./Assets/netflix mockup.jpg`,
+        tech: 'HTML, CSS, JavaScript, React & Firebase',
+        link: 'https://netflix-clone-five-blond.vercel.app',
+        description: "Een clone van populaire streamingdienst: Netflix! Deze clone bevat de basis layout en functionaliteit van Netflix. Met Firebase heb ik authenticatie toegevoegd die je de mogelijkheid geeft een account te maken en vervolgens films op te slaan in je account. Voor het ophalen van de Films heb ik gebruik gemaakt van de TMDB Movie Database."
+    },
 ]
 
 for (let i = 0; i < filterButtonsEl.length; ++i) {
