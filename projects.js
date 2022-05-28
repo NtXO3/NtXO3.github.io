@@ -26,8 +26,8 @@ const projects = [
         name: "Film Info App",
         tags: ['api', 'framework'],
         url: `./Assets/movieinfo mockup.jpg`,
-        tech: "HTML, CSS, JavaScript",
-        link: 'https://movie-info-app-lyart.vercel.app',
+        tech: "HTML, CSS, JavaScript, React",
+        link: 'https://movie-info-react.vercel.app/',
         description: "Een Website waar mensen kunnen zoeken naar alle Films om daar meer informatie over te krijgen. Ik heb gebruik gemaakt van een echte API hiervoor; de OMDB API. Meer functionaliteit zal worden toegevoegd!"
     },
     {
