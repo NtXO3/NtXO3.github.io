@@ -14,21 +14,21 @@ const projects = [
     }, 
     {
         id: 2,
-        name: "Game Store",
-        tags: ['framework'],
-        url: `./Assets/game store mockup.png`,
-        tech: "HTML, CSS, JavaScript & React",
-        link: 'https://gamestore-react.vercel.app',
-        description: `Dit is een Mockup van een E-Commerce Game Store waar ik de afgelopen maanden mee bezig ben geweest. Ik zal hier constant meer functionaliteit aan toevoegen zoals Product Pagina's en Checkout.`
+        name: "Sneaker E-Commerce Store",
+        tags: ['framework', 'api'],
+        url: `./Assets/sneaker store.jpg`,
+        tech: 'HTML, CSS, JavaScript, React & Firebase',
+        link: 'https://sneaker-store-ecru.vercel.app/',
+        description: "Dit is mijn beste Project tot nu toe. Dit is een uitgebreide E-Commerce Store met veel functionaliteit zoals gebruikersaccounts, Winkelwagen, Dynamische Product Pagina's, Slideshows en meer! Ik heb Firebase geïmplementeerd om de mogelijkheid te geven een account te maken. Alle Product Pagina's zijn dynamisch gegenereerd. Het is mogelijk om de sneakers te filteren op een prijs-range en Merk."
     },
     {
         id: 3,
-        name: "Film Info App",
-        tags: ['api', 'framework'],
-        url: `./Assets/movieinfo mockup.jpg`,
-        tech: "HTML, CSS, JavaScript, React",
-        link: 'https://movie-info-react.vercel.app/',
-        description: "Een Website waar mensen kunnen zoeken naar alle Films om daar meer informatie over te krijgen. Ik heb gebruik gemaakt van een echte API hiervoor; de OMDB API. Meer functionaliteit zal worden toegevoegd!"
+        name: "Netflix Clone",
+        tags: ['framework', 'clones', 'api'],
+        url: `./Assets/netflix mockup.jpg`,
+        tech: 'HTML, CSS, JavaScript, React & Firebase',
+        link: 'https://netflix-clone-five-blond.vercel.app',
+        description: "Een clone van populaire streamingdienst: Netflix! Deze clone bevat de basis layout en functionaliteit van Netflix. Met Firebase heb ik authenticatie toegevoegd die je de mogelijkheid geeft een account te maken en vervolgens films op te slaan in je account. Voor het ophalen van de Films heb ik gebruik gemaakt van de TMDB Movie Database."
     },
     {
         id: 4,
@@ -50,12 +50,21 @@ const projects = [
     },
     {
         id: 6,
-        name: "Netflix Clone",
-        tags: ['framework', 'clones', 'api'],
-        url: `./Assets/netflix mockup.jpg`,
-        tech: 'HTML, CSS, JavaScript, React & Firebase',
-        link: 'https://netflix-clone-five-blond.vercel.app',
-        description: "Een clone van populaire streamingdienst: Netflix! Deze clone bevat de basis layout en functionaliteit van Netflix. Met Firebase heb ik authenticatie toegevoegd die je de mogelijkheid geeft een account te maken en vervolgens films op te slaan in je account. Voor het ophalen van de Films heb ik gebruik gemaakt van de TMDB Movie Database."
+        name: "Film Info App",
+        tags: ['api', 'framework'],
+        url: `./Assets/movieinfo mockup.jpg`,
+        tech: "HTML, CSS, JavaScript, React",
+        link: 'https://movie-info-react.vercel.app/',
+        description: "Een Website waar mensen kunnen zoeken naar alle Films om daar meer informatie over te krijgen. Ik heb gebruik gemaakt van een echte API hiervoor; de OMDB API. Meer functionaliteit zal worden toegevoegd!"
+    },
+    {
+        id: 7,
+        name: "Game Store",
+        tags: ['framework'],
+        url: `./Assets/game store mockup.png`,
+        tech: "HTML, CSS, JavaScript & React",
+        link: 'https://gamestore-react.vercel.app',
+        description: `Dit is een Mockup van een E-Commerce Game Store waar ik de afgelopen maanden mee bezig ben geweest. Ik zal hier constant meer functionaliteit aan toevoegen zoals Product Pagina's en Checkout.`
     },
 ]
 
@@ -74,7 +83,7 @@ for (let i = 0; i < filterButtonsEl.length; ++i) {
     })
 }
 
-async function renderProjects(filter) {
+function renderProjects(filter) {
     document.body.classList += ' spinner-visible'
     projectsListEl.innerHTML = ""
     let filteredProjects = projects
@@ -95,7 +104,7 @@ async function renderProjects(filter) {
         filteredProjects = projects
     }
     
-    let projectsHTML = filteredProjects.map(item => {
+    const projectsHTML = filteredProjects.map(item => {
         return `
             <div class="project">
                 <div class="project__wrapper">
