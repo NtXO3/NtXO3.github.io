@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js " crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body onload="checkContrast()">
-    <section id="projects-landing">
+    <section id="projects-landing" onmousemove="moveBackground(event)">
         <nav>
             <a href="./index.html">
                 <figure class="nav__logo--wrapper">
@@ -45,7 +45,7 @@
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
-                    "><i class="fas fa-adjust"></i></a>
+                    " id="contrast-toggle"><i class="fas fa-moon"></i></a>
                 </li>
             </ul>
         </nav>
@@ -77,7 +77,7 @@
                             <br>
                             Het is mijn doel om bedrijven te voorzien van interactieve en mooie websites die de klant aanspreken en een gevoel van vertrouwen geven.
                         </p>
-                        <div class="modal__languages">
+                        <!-- <div class="modal__languages">
                             <figure class="modal__language">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" class="modal__language--img" alt="">
                                 <span class="language__name">HTML</span>
@@ -98,7 +98,7 @@
                                 <img src="./Assets/1175544_firebase_google_icon.png" class="modal__language--img" alt="">
                                 <span class="language__name">Firebase</span>
                             </figure>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="modal__half modal__contact">
                         <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
@@ -132,6 +132,15 @@
                 </div>
             </div>
         </div>
+        <img src="./Assets/semi circle.svg" class="shape shape--0">
+        <img src="./Assets/circle.svg" class="shape shape--1">
+        <img src="./Assets/squiggly.svg" class="shape shape--2">
+        <img src="./Assets/circle.svg" class="shape shape--3">
+        <img src="./Assets/triangle.svg" class="shape shape--4">
+        <img src="./Assets/circle.svg" class="shape shape--5">
+        <img src="./Assets/squiggly.svg" class="shape shape--6">
+        <img src="./Assets/circle.svg" class="shape shape--7">
+        <img src="./Assets/semi circle.svg" class="shape shape--8">
     </section>
 
     <footer>

@@ -7,6 +7,7 @@
 let isModalOpen = false;
 let isDarkTheme = JSON.parse(localStorage.getItem('dark')) === true
 const scaleFactor = 1 / 20;
+const contrastToggleEl = document.querySelector('#contrast-toggle')
 
 function moveBackground(event) {
     const shapes = document.querySelectorAll(".shape")
@@ -20,6 +21,7 @@ function moveBackground(event) {
     }
 }
 
+
 function toggleContrast(event) {
     // if (isDarkTheme && )
     isDarkTheme = !isDarkTheme
@@ -27,16 +29,27 @@ function toggleContrast(event) {
     if(isDarkTheme) {
         document.body.classList += " dark-theme"
         localStorage.setItem('dark', true)
+        contrastToggleEl.innerHTML = `<i class="fas fa-sun"></i>`
+        contrastToggleEl.childNodes[0].classList += ' rotate'
+        setTimeout(() => {
+            contrastToggleEl.childNodes[0].classList.remove('rotate')
+        }, 500)
     }
     else {
         document.body.classList.remove("dark-theme")
         localStorage.setItem('dark', false)
+        contrastToggleEl.innerHTML = `<i class="fas fa-moon"></i>`
+        contrastToggleEl.childNodes[0].classList += ' rotate'
+        setTimeout(() => {
+            contrastToggleEl.childNodes[0].classList.remove('rotate')
+        }, 500)
     }
 } 
 
 function checkContrast() {
     if (isDarkTheme) {
         document.body.classList += " dark-theme"
+        contrastToggleEl.innerHTML = `<i class="fas fa-sun"></i>`
     }
 }
 
