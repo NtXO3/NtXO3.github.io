@@ -35,6 +35,10 @@
     background-color: rgb(231, 225, 255);
 }
 
+.dark-theme ::selection {
+    background-color: rgb(110, 156, 170);
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -232,6 +236,26 @@ nav, .scroll, header {
 
 .dark-theme .skill p {
     color: #eef1f8;
+}
+
+.dark-theme #tech-stack::before, .dark-theme #tech-stack::after {
+    filter: invert(0.86)
+}
+
+.dark-theme #tech-stack {
+    background-color: #252525;
+}
+
+.dark-theme .experience__tooltip {
+    background-color: #292b2e;
+}
+
+.dark-theme .experience__tooltip--para {
+    color: #c0c4cc;
+}
+
+.dark-theme .experience__tooltip::after {
+    border-top: 10px solid #292b2e;
 }
 
 .rotate {
@@ -652,7 +676,8 @@ nav{
     font-weight: 700;
     text-align: center;
     margin-bottom: 60px;
-    z-index: 999;
+    z-index: 200;
+    position: relative;
 }
 
 .project__img{
@@ -907,7 +932,7 @@ Skills & Experience
 .experience__tooltip {
     position: absolute;
     top: 0%;
-    left: 0%;
+    left: 15%;
     transform: translate(0, -80%);
     background-color: #fff;
     padding: 1.5rem;
@@ -941,6 +966,7 @@ Skills & Experience
     bottom: 0;
     transform: translate(-50%, 100%);
     left: 50%;
+    z-index: 200;
 }
 
 .experience__info:hover .experience__tooltip {
@@ -971,6 +997,33 @@ Skills & Experience
 .experience__location {
     font-size: 14px;
     color: #66686b;
+}
+
+#tech-stack {
+    background-color: #fffdff;
+    position: relative;
+}
+
+#tech-stack::before {
+    content: url('./Assets/wave.svg');
+    background-color: transparent;
+    width: 100%;
+    height: 15vw;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    z-index: 0;
+}
+
+#tech-stack::after {
+    content: url('./Assets/wave.svg');
+    background-color: transparent;
+    width: 100%;
+    height: 15vw;
+    position: absolute;
+    bottom: 1px;
+    transform: rotate(180deg) translateY(-100%);
+    z-index: 1;
 }
 
 /* FOOTER */
@@ -1030,7 +1083,7 @@ footer{
 
 .shape{
     position: fixed;
-    z-index: 0;
+    z-index: 10;
 }
 
 .shape--0 {
@@ -1079,8 +1132,28 @@ footer{
     left: 80vw;
 }
 
-#tech-stack {
-    background-color: #fffdff;
+.nav__dots {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 2%;
+    top: 50%;
+    transform: translate(-2%, -50%);
+    z-index: 500;
+}
+
+.nav__dot {
+    background-color: rgb(213, 207, 238);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.nav-dot-current {
+    transform: scale(1.2);
+    background-color: rgb(170, 150, 252);
 }
 
 /* Small Phones, tablets, large smart phones */
