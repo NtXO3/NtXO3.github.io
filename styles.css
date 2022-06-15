@@ -1013,6 +1013,7 @@ Skills & Experience
     top: 0;
     transform: translateY(-100%);
     z-index: 0;
+    transition: all 500ms ease;
 }
 
 #tech-stack::after {
@@ -1024,6 +1025,7 @@ Skills & Experience
     bottom: 1px;
     transform: rotate(180deg) translateY(-100%);
     z-index: 1;
+    transition: all 500ms ease;
 }
 
 /* FOOTER */
