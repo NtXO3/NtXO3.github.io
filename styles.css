@@ -1201,6 +1201,10 @@ footer{
 }
 
 @media (max-width: 620px) {
+    .shape {
+        display: none;
+    }
+    
     .tech__wrapper {
         flex-wrap: wrap;
         justify-content: center;
