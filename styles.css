@@ -1008,7 +1008,7 @@ Skills & Experience
     position: relative;
 }
 
-#tech-stack::before {
+/* #tech-stack::before {
     content: url('./Assets/wave.svg');
     background-color: transparent;
     width: 100%;
@@ -1030,7 +1030,7 @@ Skills & Experience
     transform: rotate(180deg) translateY(-100%);
     z-index: 1;
     transition: all 500ms ease;
-}
+} */
 
 /* FOOTER */
 
