@@ -24,9 +24,9 @@
     padding: 0;
 }
 */
-body {
+/* #tech-stack {
     overflow-x: hidden !important;
-}
+} */
 
 * {
     font-family: 'Inter', sans-serif;
@@ -1197,6 +1197,30 @@ footer{
 
     .experience__wrapper {
         padding-left: 2rem;
+    }
+
+    .experience__tooltip {
+        width: 90vw;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .experience__row {
+        position: relative;
+    }
+
+    .experience__info {
+        position: static;
+    }
+
+    @keyframes slide-up {
+        0% {
+            transform: translate(-50%, -20%);
+        }
+        100% {
+            transform: translate(-50%, -50%);
+        }
     }
 }
 
