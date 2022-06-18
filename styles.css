@@ -367,6 +367,39 @@ nav{
     line-height: 1.1;
 }
 
+.title__color {
+    font-size: 80px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 1.1;
+    color: rgb(78, 33, 255);
+}
+
+.typing__cursor {
+    color: #535353;
+    animation: typing 1200ms infinite ease;
+    font-size: 80px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.1;
+}
+
+.dark-theme .typing__cursor{
+    color: #fff;
+}
+
+@keyframes typing {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .header__para{
     font-size: 22px;
     line-height: 1.7;
@@ -936,16 +969,17 @@ Skills & Experience
 .experience__tooltip {
     position: absolute;
     top: 0%;
-    left: 15%;
+    left: 10%;
     transform: translate(0, -80%);
     background-color: #fff;
     padding: 1.5rem;
-    z-index: 100;
+    z-index: 900;
     visibility: hidden;
     opacity: 0;
     box-shadow: 0 4px 32px 4px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     transition: all 300ms ease;
 }
 
@@ -1164,8 +1198,14 @@ footer{
 
 /* Small Phones, tablets, large smart phones */
 
+@media (max-width: 1200px) {
+    .experience__tooltip {
+        left: 0%;
+    }
+}
+
 @media(max-width: 768px) {
-    .title{
+    .title, .title__color, .typing__cursor{
         font-size: 72px;
     }
 
@@ -1224,7 +1264,7 @@ footer{
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 650px) {
     .shape {
         display: none;
     }
@@ -1250,7 +1290,7 @@ footer{
 }
 
 @media(max-width: 480px) {
-    .title{
+    .title, .title__color, .typing__cursor{
         font-size: 54px;
     }
 
