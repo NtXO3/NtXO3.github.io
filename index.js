@@ -32,12 +32,12 @@ async function typingTitle() {
             return
         }
         typingCursorEl.style.color = 'rgb(122, 89, 255)'
-    }, 180 * timeoutIndex)
+    }, 180 * (timeoutIndex + Math.random()))
 
     for (let i = 0; i < titleBottom.length; ++i) {
         setTimeout(() => {
             titleColorEl.innerText += titleBottom[i]
-        }, 180 * timeoutIndex)
+        }, 180 * timeoutIndex + Math.random())
         timeoutIndex += 1
     }
 }
