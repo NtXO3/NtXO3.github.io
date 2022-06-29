@@ -50,12 +50,12 @@ const projects = [
     },
     {
         id: 6,
-        name: "Film Info App",
-        tags: ['api', 'framework'],
-        url: `./Assets/movieinfo mockup.jpg`,
-        tech: "HTML, CSS, JavaScript, React",
-        link: 'https://movie-info-react.vercel.app/',
-        description: "Een Website waar mensen kunnen zoeken naar alle Films om daar meer informatie over te krijgen. Ik heb gebruik gemaakt van een echte API hiervoor; de OMDB API. Meer functionaliteit zal worden toegevoegd!"
+        name: "Homeland - Real Estate App",
+        tags: ['framework'],
+        url: `./Assets/homeland-mockup.jpg`,
+        tech: "HTML, CSS, JavaScript & React",
+        link: 'https://real-estate-react-eight.vercel.app/',
+        description: `Dit is een simpel design van een Real Estate App. Dit design is fully responsive op alle resoluties en heeft interessante functies zoals dynamic routing, filtering en meer. Het is mogelijk om alle listings van één bepaalde Agent op te halen zowel als te zoeken naar Listings die voldoen aan bepaalde filters.`
     },
     {
         id: 7,
@@ -66,6 +66,7 @@ const projects = [
         link: 'https://gamestore-react.vercel.app',
         description: `Dit is een Mockup van een E-Commerce Game Store waar ik de afgelopen maanden mee bezig ben geweest. Ik zal hier constant meer functionaliteit aan toevoegen zoals Product Pagina's en Checkout.`
     },
+    
 ]
 
 for (let i = 0; i < filterButtonsEl.length; ++i) {
