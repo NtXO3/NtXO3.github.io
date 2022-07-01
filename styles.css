@@ -1309,12 +1309,31 @@ footer{
     .project__description--sub-title{
         margin-bottom: 20px;
         max-width: 260px;
+        font-size: 16px;
     }
 
     .project__description {
         text-align: center;
         top: 50%;
-        left: 80px;
+        left: 50%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, 150%);
+    }
+
+    .project__description--title {
+        font-size: 32px;
+    }
+
+    .project__description--sub-title {
+        margin-right: 0;
+    }
+
+    .project__wrapper:hover .project__description {
+        transform: translate(-50%, -50%);
     }
 
     .modal__half{
