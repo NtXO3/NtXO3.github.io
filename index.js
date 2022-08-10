@@ -16,14 +16,13 @@ const typingCursorEl = document.querySelector('.typing__cursor')
 
 async function typingTitle() {
     const titleTop = ['H', 'e', 'y', '!', `<br>`]
-    const titleBottom = 'Ik ben Nathan.'
+    const titleBottom = 'I am Nathan.'
     let timeoutIndex = 1
     for (let i = 0; i < titleTop.length; ++i) {
         setTimeout(() => {
             titleEl.innerHTML += titleTop[i]
-        }, 180 * timeoutIndex)
+        }, 180 * (timeoutIndex + Math.random()))
         timeoutIndex += 1
-        
     }
 
     setTimeout(() => {
@@ -69,9 +68,7 @@ function isInViewport(el) {
 
 
 function toggleContrast(event) {
-    // if (isDarkTheme && )
     isDarkTheme = !isDarkTheme
-    console.log('dark theme', isDarkTheme)
     if(isDarkTheme) {
         document.body.classList += " dark-theme"
         localStorage.setItem('dark', true)

@@ -8,9 +8,9 @@ const projects = [
         name: "MusiCore",
         tags: ['commercial'],
         url: `./Assets/musicore mockup.png`,
-        tech: "WordPress, WooCommerce met custom HTML en CSS",
+        tech: "WordPress, WooCommerce, HTML, CSS & JavaScript",
         link: 'https://musicore.co',
-        description: `Sinds 2019 heb ik mijn eigen bedrijf gefocust op Muziek. Ik heb hiervoor zelf de website gemaakt met WordPress. Aan deze site heb ik ook veel custom CSS toegevoegd.`,
+        description: `Since 2019 I have my own business in Music called MusiCore. I built the site myself using WordPress and WooCommerce in combination with lots of custom HTML, CSS and JavaScript to add custom functionality.`,
     }, 
     {
         id: 2,
@@ -19,16 +19,16 @@ const projects = [
         url: `./Assets/sneaker store.jpg`,
         tech: 'HTML, CSS, JavaScript, React & Firebase',
         link: 'https://sneaker-store-ecru.vercel.app/',
-        description: "Dit is mijn beste Project tot nu toe. Dit is een uitgebreide E-Commerce Store met veel functionaliteit zoals gebruikersaccounts, Winkelwagen, Dynamische Product Pagina's, Slideshows en meer! Ik heb Firebase geïmplementeerd om de mogelijkheid te geven een account te maken. Alle Product Pagina's zijn dynamisch gegenereerd. Het is mogelijk om de sneakers te filteren op een prijs-range en Merk."
+        description: "Fully Functional E-Commerce store built with React. Authentication and Backend using Firebase. User can add Products to cart as well as add Products to a Wishlist which gets saved in Firebase's Database. The Products can be filtered according to Brand and Price and both filters can be used together. "
     },
     {
         id: 3,
-        name: "Netflix Clone",
-        tags: ['framework', 'clones', 'api'],
-        url: `./Assets/netflix mockup.jpg`,
-        tech: 'HTML, CSS, JavaScript, React & Firebase',
-        link: 'https://netflix-clone-five-blond.vercel.app',
-        description: "Een clone van populaire streamingdienst: Netflix! Deze clone bevat de basis layout en functionaliteit van Netflix. Met Firebase heb ik authenticatie toegevoegd die je de mogelijkheid geeft een account te maken en vervolgens films op te slaan in je account. Voor het ophalen van de Films heb ik gebruik gemaakt van de TMDB Movie Database."
+        name: "Movie Streaming App",
+        tags: ['framework', 'api'],
+        url: `./Assets/movie app mockup.jpg`,
+        tech: 'HTML, CSS, TypeScript, React, Firebase, Styled Components',
+        link: 'https://movie-react-app-pi.vercel.app/',
+        description: "Full Stack Web Application like Netflix & Disney Plus. The Authentication and Backend is being handled by Firebase. The Frontend was built with React and TypeScript with Styled Components. A user can search for movies and watch the respective trailer as well as save Movies or Series in their account. "
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const projects = [
         url: `./Assets/wordle mockup.png`,
         tech: "HTML, CSS, JavaScript, React",
         link: "https://worlde-clone-react.vercel.app",
-        description: "Een clone van de populaire Wordle Game. Het doel van deze game is om het juist gekozen woord te raden. Na elke gok zie je welke letters in het woord zitten en welke niet. Ik heb deze functionaliteit toegevoegd samen met een Score counter en een slimme fucntie die je niet letters laat typen die je al hebt gebruikt en niet in het woord zitten."
+        description: "Clone of popular Wordle Game. The objective of the game is to guess the correct word in 6 tries. After each try you can see which letters are in the correct word and also if they are in the correct place or not. After beating the game your score gets incremented by 1."
     },
     {
         id: 5,
@@ -46,7 +46,7 @@ const projects = [
         url: `./Assets/google mockup.jpg`,
         tech: 'HTML, CSS, JavaScript, React',
         link: 'https://google-clone-six-tau.vercel.app',
-        description: "Een clone van 's werelds meestgebruikte Search Engine: Google. Deze clone van Google heeft de basis functionaliteit van Google; het ophalen van informatie van het internet. Je kan zelf zoeken naar een onderwerp en daarvoor de resultaten zien. Ik heb gebruik gemaakt van een API om de Zoekresultaten voor een zoekopdracht te krijgen. Meer functionaliteit zal worden toegevoegd."
+        description: "A clone of the most popular search engine in the world: Google! This clone has Google's base functionality, which is getting information from the Internet. You can search for queries and get the results for that search term. I used Google's Search API to get the results. More functionality will be added."
     },
     {
         id: 6,
@@ -55,16 +55,7 @@ const projects = [
         url: `./Assets/homeland-mockup.jpg`,
         tech: "HTML, CSS, JavaScript & React",
         link: 'https://real-estate-react-eight.vercel.app/',
-        description: `Dit is een simpel design van een Real Estate App. Dit design is fully responsive op alle resoluties en heeft interessante functies zoals dynamic routing, filtering en meer. Het is mogelijk om alle listings van één bepaalde Agent op te halen zowel als te zoeken naar Listings die voldoen aan bepaalde filters.`
-    },
-    {
-        id: 7,
-        name: "Game Store",
-        tags: ['framework'],
-        url: `./Assets/game store mockup.png`,
-        tech: "HTML, CSS, JavaScript & React",
-        link: 'https://gamestore-react.vercel.app',
-        description: `Dit is een Mockup van een E-Commerce Game Store waar ik de afgelopen maanden mee bezig ben geweest. Ik zal hier constant meer functionaliteit aan toevoegen zoals Product Pagina's en Checkout.`
+        description: "This is a fully responsive Real Estate Application built with React. It contains interesting features such as Dynamic Routing, Advanced Filters and more. You can get the details for each listing on their own unique page. It's also possible to get the listings of a specific agent. "
     },
     
 ]

@@ -28,14 +28,21 @@
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
-                    " onclick="toggleModal()">Over Mij</a>
+                    " onclick="toggleModal()">About Me</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#tech-stack" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black
+                    ">Experience</a>
                 </li>
                 <li class="nav__link">
                     <a href="./projects.html" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
-                    ">Projecten</a>
+                    ">Projects</a>
                 </li>
                 <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
@@ -63,11 +70,9 @@
                             <span class="typing__cursor">|</span>
                         </div>
                         <p class="header__para">
-                            Ik ben een <b class="text-color">Junior Frontend Developer</b> met een passie om interactieve en gebruikersvriendelijke User Interfaces te maken. 
+                            I am a <b class="text-color">Junior Frontend Developer</b> with a passion for creating Interactive & Dynamic User Interfaces. 
                         <br>
-                            <a href="#">
-                                <b class="text-color click link__hover-effect link__hover-effect--purple" onclick="toggleModal()">Hier</b></a> is meer info over mij.
-                            
+                            <b class="text-color click link__hover-effect link__hover-effect--purple" onclick="toggleModal()">Learn</b> more about me.
                         </p>
                         <div class="social__list">
                             <a href="https://www.linkedin.com/in/nathan-minkhorst-213467238/" target="_blank" class="social__link click"><i class="fab fa-linkedin-in"></i></a>
@@ -81,51 +86,23 @@
                         <i class="fas fa-envelope"></i>
                     </button>
                 </a>
-                <!--
-                <a href="./index-en.html">
-                    <button class="language__btn click">
-                        <img src="./Assets/uk flag.svg" alt="" class="language__flag">
-                    </button>
-                </a> -->
                 <!-- <a href="#projects" class="scroll">
                     <div class="scroll__icon click"></div>
                 </a> -->
                 <div class="modal">
                     <div class="modal__half modal__about">
-                        <h3 class="modal__title modal__title--about">Meer Info Over Mij.</h3>
+                        <h3 class="modal__title modal__title--about">More Info About Me.</h3>
                         <h4 class="modal__subtitle modal__subtitle--about">Junior Frontend Developer</h4>
                         <p class="modal__para modal__para--about">
-                            Ik ben een 18-jarige <b class="text-color-modal">Junior Frontend Developer</b> uit Leiden, Nederland met een passie om interactieve en gebruikersvriendelijke <b class="text-color-modal">User Interfaces</b> te maken.
+                            I am an 18 Year Old <b class="text-color-modal">Junior Frontend Developer</b> from the Netherlands for creating highly-interactive and responsive <b class="text-color-modal">User Interfaces.</b>
                             <br>
-                            Het is mijn doel om bedrijven te voorzien van interactieve en mooie websites die de klant aanspreken en een gevoel van vertrouwen geven.
+                            It's my goal to build functional and performant Web Applications that will improve the user's satisfaction.
                         </p>
-                        <!-- <div class="modal__languages">
-                            <figure class="modal__language">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" class="modal__language--img" alt="">
-                                <span class="language__name">HTML</span>
-                            </figure>
-                            <figure class="modal__language">
-                                <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" class="modal__language--img" alt="">
-                                <span class="language__name">CSS</span>
-                            </figure>
-                            <figure class="modal__language">
-                                <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" class="modal__language--img" alt="">
-                                <span class="language__name">JavaScript</span>
-                            </figure>
-                            <figure class="modal__language">
-                                <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" class="modal__language--img" alt="">
-                                <span class="language__name">React</span>
-                            </figure>
-                            <figure class="modal__language">
-                                <img src="./Assets/1175544_firebase_google_icon.png" class="modal__language--img" alt="">
-                                <span class="language__name">Firebase</span>
-                            </figure>
-                        </div> -->
                     </div>
                     <div class="modal__half modal__contact">
                         <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-                        <h3 class="modal__title modal__title--contact">Neem Contact Op!</h3>
-                        <h4 class="modal__subtitle modal__subtitle--contact">Ik sta open voor nieuwe kansen!</h4>
+                        <h3 class="modal__title modal__title--contact">Reach Out To Me!</h3>
+                        <h4 class="modal__subtitle modal__subtitle--contact">I am open for new opportunities.</h4>
                         <form id="contact__form" onsubmit="contact(event)">
                             <div class="form__item">
                                 <label class="form__item--label">Name</label>
@@ -139,16 +116,16 @@
                                 <label class="form__item--label">Message</label>
                                 <textarea type="input" name="message" class="input" required></textarea>
                             </div>
-                            <button id="contact__submit" class="form__submit click">Verzenden</button>
+                            <button id="contact__submit" class="form__submit click">Send</button>
                         </form>
                         <div class="modal__overlay modal__overlay--loading">
                             <i class="fas fa-spinner"></i>
                         </div>
                         <div class="modal__overlay modal__overlay--success">
-                            Bedankt voor je bericht. Ik kijk er naar uit om meer te weten over jullie. Ik neem snel contact op!
+                            Thank you for your message. I look forward to learning more. I will be in touch soon!
                         </div>
                         <div class="modal__overlay modal__overlay--error">
-                            Oeps...er ging iets mis. Je E-Mail is niet verzonden. Probeer: <b>nathanminkhorst@gmail.com</b>
+                            Oops something went wrong and your Email was not delivered. Try: <b>nathanminkhorst@gmail.com</b>
                         </div>
                     </div>
                 </div>
@@ -167,7 +144,7 @@
     <section id="tech-stack" onmousemove="moveBackground(event)">
         <div class="container">
             <div class="row">
-                <h2 class="section__title">Skills & Ervaring</h2>
+                <h2 class="section__title">Skills & Experience</h2>
                 <div class="tech__wrapper">
                     <div class="skills__wrapper">
                         <div class="skill">
@@ -223,10 +200,13 @@
                         <div class="experience__row">
                             <h3 class="experience__year">2019</h3>
                             <div class="experience__info">
-                                <h3 class="experience__role">Zelfstandig Ondernemer</h3>
+                                <h3 class="experience__role">Business Owner</h3>
                                 <p class="experience__location">MusiCore</p>
                                 <div class="experience__tooltip">
-                                    <p class="experience__tooltip--para">Sinds 2019 heb ik een eigen E-Commerce onderneming genaamd MusiCore. Deze site heb ik zelf gebouwd met WordPress, WooCommerce en veel eigen HTML en CSS.</p>
+                                    <p class="experience__tooltip--para">
+                                        Since 2019 I have my own business in Music called MusiCore. I built the site myself using WordPress and WooCommerce in 
+                                        combination with lots of custom HTML, CSS and JavaScript to add custom functionality.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -236,19 +216,18 @@
                                 <h3 class="experience__role">Freelance Frontend Developer</h3>
                                 <p class="experience__location">Freelance</p>
                                 <div class="experience__tooltip">
-                                    <p class="experience__tooltip--para">Sinds 2022 ben ik actief als Freelance Frontend Developer en heb ik meerdere Projecten voor klanten gemaakt, op tijd geleverd op een professionele manier met een user-friendly design.</p>
+                                    <p class="experience__tooltip--para">In early 2022, I have been active as a Freelancer, delivering High-Quality websites to various small business owners. I designed these sites according to their wishes.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="experience__row">
                             <h3 class="experience__year">2022</h3>
                             <div class="experience__info">
-                                <h3 class="experience__role">Frontend Developer Trainee</h3>
+                                <h3 class="experience__role">Junior Frontend Developer</h3>
                                 <p class="experience__location">LabelA, Rotterdam</p>
                                 <div class="experience__tooltip">
                                     <p class="experience__tooltip--para">
-                                        Sinds Juli 2022 werk ik bij Label A als Frontend Developer. Ik heb hier gewerkt aan Projecten voor
-                                        meerdere klanten en alle design wensen op een Professionele en geoptimaliseerde manier geimplementeerd.
+                                        Since July 2022, I have been working as a Junior Frontend Developer at LabelA, working on various different Projects with a team of developers and designers for clients such as Go Sharing.
                                     </p>
                                 </div>
                             </div>
@@ -261,7 +240,7 @@
     <section id="projects" onmousemove="moveBackground(event)">
         <div class="container">
             <div class="row">
-                <h1 class="section__title">Hier zie je <span class="text-color"> Projecten</span> van mij:</h1>
+                <h1 class="section__title">See My <span class="text-color"> Projects:</span></h1>
                 <div class="project__list">
                     <div class="project">
                         <div class="project__wrapper">
@@ -270,10 +249,10 @@
                             <div class="project__description">
                                 <h3 class="project__description--title">MusiCore</h3>
                                 <h4 class="project__description--sub-title">
-                                    WordPress, WooCommerce met custom HTML en CSS
+                                    WordPress, WooCommerce, HTML, CSS & JavaScript
                                 </h4>
                                 <p class="project__description--para">
-                                    Sinds 2019 heb ik mijn eigen bedrijf gefocust op Muziek. Ik heb hiervoor zelf de website gemaakt met WordPress. Aan deze site heb ik ook veel custom CSS toegevoegd.
+                                    Since 2019 I have my own business in Music called MusiCore. I built the site myself using WordPress and WooCommerce in combination with lots of custom HTML, CSS and JavaScript to add custom functionality.
                                 </p>
                                 <div class="project__description--links">
                                     <a href="https://musicore.co" target="_blank" class="project__description--link click"><i class="fas fa-link"></i></a>
@@ -291,7 +270,7 @@
                                     HTML, CSS, JavaScript, React & Firebase
                                 </h4>
                                 <p class="project__description--para">
-                                    Dit is mijn beste Project tot nu toe. Dit is een uitgebreide E-Commerce Store met veel functionaliteit zoals gebruikersaccounts, Winkelwagen, Dynamische Product Pagina's, Slideshows en meer! Ik heb Firebase geïmplementeerd om de mogelijkheid te geven een account te maken. Alle Product Pagina's zijn dynamisch gegenereerd. Het is mogelijk om de sneakers te filteren op een prijs-range en Merk.
+                                    Fully Functional E-Commerce store built with React. Authentication and Backend using Firebase. User can add Products to cart as well as add Products to a Wishlist which gets saved in Firebase's Database. The Products can be filtered according to Brand and Price and both filters can be used together. 
                                 </p>
                                 <div class="project__description--links">
                                     <a href="https://sneaker-store-ecru.vercel.app/" target="_blank" class="project__description--link"><i class="fas fa-link"></i></a>
@@ -301,15 +280,15 @@
                     </div>
                     <div class="project">
                         <div class="project__wrapper">
-                            <img src="./Assets/netflix mockup.jpg" class="project__img" alt="">
+                            <img src="./Assets/movie app mockup.jpg" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
                             <div class="project__description">
-                                <h3 class="project__description--title">Netflix Clone</h3>
+                                <h3 class="project__description--title">Movie Streaming App</h3>
                                 <h4 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript, React en Firebase
+                                    HTML, CSS, TypeScript, React, Firebase, Styled Components
                                 </h4>
                                 <p class="project__description--para">
-                                    Een clone van populaire streamingdienst: Netflix! Deze clone bevat de basis layout en functionaliteit van Netflix. Met Firebase heb ik authenticatie toegevoegd die je de mogelijkheid geeft een account te maken en vervolgens films op te slaan in je account. Voor het ophalen van de Films heb ik gebruik gemaakt van de TMDB Movie Database.
+                                    Full Stack Web Application like Netflix & Disney Plus. The Authentication and Backend is being handled by Firebase. The Frontend was built with React and TypeScript with Styled Components. A user can search for movies and watch the respective trailer as well as save Movies or Series in their account. 
                                 </p>
                                 <div class="project__description--links">
                                     <a href="https://netflix-clone-five-blond.vercel.app" target="_blank" class="project__description--link"><i class="fas fa-link"></i></a>
@@ -318,7 +297,7 @@
                         </div>
                     </div>
                     <a href="./projects.html">
-                        <button class="projects__btn">Meer Projecten...</button>
+                        <button class="projects__btn">More Projects...</button>
                     </a>
                 </div>
             </div>
@@ -345,7 +324,7 @@
                     <a href="./Assets/Nathan Minkhorst CV.pdf" class="footer__social--link 
                     link__hover-effect 
                     link__hover-effect--white" target="_blank">
-                    CV
+                    Resumee
                     </a>
                     <a href="#" class="footer__social--link 
                     link__hover-effect 
