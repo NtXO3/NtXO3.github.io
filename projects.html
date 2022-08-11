@@ -13,46 +13,53 @@
 <body onload="checkContrast()">
     <section id="projects-landing" onmousemove="moveBackground(event)">
         <nav>
-            <a href="./index.html">
+            <div class="nav__container">
                 <figure class="nav__logo--wrapper">
                     <img src="./Assets/Nathan Logo.png" alt="" class="personal-logo">
                 </figure>
-            </a>
-            <ul class="nav__link--list">
-                <li class="nav__link">
-                    <a href="./index.html" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    " onclick="toggleModal()">Over Mij</a>
-                </li>
-                <li class="nav__link">
-                    <a href="./projects.html" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">Projecten</a>
-                </li>
-                <li class="nav__link" onclick="toggleModal()">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    ">Contact</a>
-                </li>
-                <li class="nav__link click" onclick="toggleContrast()">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    " id="contrast-toggle"><i class="fas fa-moon"></i></a>
-                </li>
-            </ul>
+                <ul class="nav__link--list">
+                    <li class="nav__link">
+                        <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                        " onclick="toggleModal()">About Me</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#tech-stack" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                        ">Experience</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="./projects.html" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                        ">Projects</a>
+                    </li>
+                    <li class="nav__link" onclick="toggleModal()">
+                        <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                        ">Contact</a>
+                    </li>
+                    <li class="nav__link click" onclick="toggleContrast()">
+                        <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                        " id="contrast-toggle"><i class="fas fa-moon"></i></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <div class="container">
+        <div class="container" style="margin-top: 100px;">
             <div class="row">
                 <h1 class="section__title">
-                    Mijn <span class="text-color">Projecten</span>
+                    My <span class="text-color">Projects</span>
                 </h1>
                 <div class="projects__filter">
                     <button class="projects__filter--btn selected__filter">All</button>
