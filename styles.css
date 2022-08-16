@@ -192,8 +192,12 @@ nav, .scroll, header {
     color: #fff;
 }
 
-.dark-theme section {
+.dark-theme section, .dark-theme nav {
     background-color: #141617;
+}
+
+.dark-theme nav {
+    border-color: rgb(37, 37, 37);
 }
 
 .dark-theme .text-color, .dark-theme .title__color, .dark-theme .experience__year{
